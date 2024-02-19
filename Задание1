@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main
+
+{   public static void main(String[] args) {
+   
+    Scanner in = new Scanner(System.in);
+    System.out.print("Input a:");
+    double a = in.nextInt();
+    
+    System.out.print("Input b:");
+    double b = in.nextInt();
+    
+    in.close();
+    
+    if (a > b) {
+        System.out.println("a > b");
+        } else if (a < b) {
+            System.out.println("b < a");
+            } else {
+                System.out.println("a = b");
+                }
+    
+    System.out.println("Sum: " + (a+b) );
+    System.out.println("Subtraction:" + (a-b) );
+    System.out.println("Multiplication:" + (a*b) );
+    System.out.println("Division:" + (a/b));
+    
+    }
+}
